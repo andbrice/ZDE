@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+#wrap{
+  margin: 0 auto;
+  width: 950px;
+}
+
 section {
   display: block;
   margin: 0 0 20px 0;
