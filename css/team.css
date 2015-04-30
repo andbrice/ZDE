@@ -1,0 +1,41 @@
+.members .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.members h3 {
+  font-weight: normal;
+}
+.members .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/*-------------------------------------------------- */
+
+@media (min-width: 770px) {
+    .heading {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 970px) {
+  .heading {
+	font-size: 20px;
+    margin-top: 15px;
+	margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .heading {
+	font-size: 25px;
+    margin-top: 20px;
+	margin-bottom: 50px;
+  }
+}
