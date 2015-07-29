@@ -1,108 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1, user-scalable=no">
-           
-    <title>About Team</title>
+	<head>
+		<title>@ZDE:~$ /TheTeam</title>
+		<meta charset="utf-8">
+		
+		<!--mobile first: this makes the site mobile friendly-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Bootstrap files from the server, as opposed to using the ones downloaded-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/basic.css">
-    <link rel="stylesheet" type="text/css" href="css/team.css">
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  
-  <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand">Zero Day Exploit - ZDE</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">About</a></li>
-            <li><a href="game.html">The Game</a></li>
-            <li class="active"><a href="team.html">The Team</a></li>
-            <li><a href="http://student.labranet.jamk.fi/~I1187/ZDE_Beta/Small/ZDEWebSmall.html">Play small size</a></li>
-            <li><a href="http://student.labranet.jamk.fi/~I1187/ZDE_Beta/ZDEWeb.html">Play large size</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <div class="container">
-
-      <div class="text">
-        <h2>Team that made ZDE</h2>
-        <p class="lead">Team TDF was formed in January 2015 for Game Project course in JAMK.<br>Team has three Canadian exchange students and one South Korean exchange student and one Finnish student.</p>
-      </div>
-
-
-<div class="members">
-
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="pictures/andrea.jpg" alt="" width="140" height="140">
-          <h3 class="heading">Andrea Briceño<br>
-          		<span class="text-muted">Project Manager<br>Graphics Specialist</span>
-          </h3>
-        </div><!-- /.col-lg-4 -->
-        
-        <div class="col-lg-4">
-          <img class="img-circle" src="pictures/brian.jpg" alt="" width="140" height="140">
-          <h3 class="heading">Brian Newell<br>
-          		<span class="text-muted">Project Lead<br>Head Programmer</span>
-          </h3>
-        </div><!-- /.col-lg-4 -->
-        
-        <div class="col-lg-4">
-          <img class="img-circle" src="pictures/seungju.jpg" alt="" width="140" height="140">
-          <h3 class="heading">Seungju Baek<br>
-          		<span class="text-muted">Vice Programmer<br>Creative Director</span>
-          </h3>
-        </div><!-- /.col-lg-4 -->
-        
-        <div class="col-lg-4">
-          <img class="img-circle" src="pictures/sean.jpg" alt="" width="140" height="140">
-          <h3 class="heading">Sean Legge<br>
-          		<span class="text-muted">Creative Director</span>
-          </h3>
-        </div><!-- /.col-lg-4 -->
-        
-        <div class="col-lg-4">
-          <img class="img-circle" src="pictures/elli.jpg" alt="" width="140" height="140">
-          <h3 class="heading">Elli Manninen<br>
-          		<span class="text-muted">Audio Engineer<br>Wed Designer</span>
-          </h3>
-        </div><!-- /.col-lg-4 -->
-        
-      </div><!-- /.row -->
-
-
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015  &middot; Team TDF</p>
-      </footer>
-
-    </div><!-- /.container -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-  </body>
+			<!-- Latest compiled JavaScript -->
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			
+			<style>
+				body, html{
+					height: 100%;
+				}
+				
+				body{
+					background-color: #000;
+				}
+			
+				.container{
+					min-height: 100%;
+				}
+				
+				#mainNavBar a{
+					color: #00ff00;
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 16px;
+				}
+				
+				.zdehead{
+					margin-top: -20px;
+				}
+				
+				#wrap{
+					margin: 0 auto;
+					padding-bottom: 50px;
+				}
+				
+				h1{
+					font-family: "Lucida Console", Monaco, monospace;
+					text-shadow: 2px 2px 2px #FFF;
+					color: #009900;
+					padding: 50px 50px;
+				}
+				
+				h2{
+					font-family: "Lucida Console", Monaco, monospace;
+					color: #000;
+					text-shadow: 1px 1px 2px #00ff00;
+				}
+				
+				h3{
+					font-family: "Lucida Console", Monaco, monospace sans-serif;
+					font-size: 28px;
+					text-shadow: 1px 1px 1px #00ff00;
+					color: #000;
+					text-align: center;
+				}
+				
+				h4{
+					font-family: "Times New Roman", Times, serif;
+					font-size: 15px;
+					text-align: center;
+				}
+				
+				p{
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 15px;
+					text-align: center;
+				}
+				
+				.row{
+					margin-top: 50px;
+					text-align: center;
+				}
+				
+				footer{
+					position: relative;
+					clear: both;
+					margin-top: -px;
+				}
+				.footer ul{
+						list-style-type: none;
+						text-align: center;
+						padding-top: 15px;
+						
+				}
+				.footer li{
+					
+					display: inline;
+					padding-right: 80px;
+					
+				}
+				
+				.footer a{
+					color: #00ff00;
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 16px;
+				}
+			</style>
+			
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<!--logo-->
+			<div class="navbar-header">
+				
+				<!--Button that collapses menu in mobile view-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>	
+				<img src="logo2.png" width="70">
+			</div>
+			
+			<!-- menu items -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">The Game</a></li>
+					<li class="active"><a href="#">The Team</a></li>
+					<li><a href="zde.html">About ZDE</a></li>
+					<li><a href="contact.html">Contact TDF</a></li>
+				</ul>	
+			</div>
+			
+		</div>
+		
+		</nav>
+		
+		<div id="content" class="bs-docs-header zdehead" tableindex="-1">
+				<img src="matrixheader.png" alt="ZDE Header" class="img-responsive">
+		</div>
+		
+		<!--Body -->
+		<div id="wrap" class="container">
+			<h2>@ZDE:/team$ ls </h2> 
+			<div class="row">
+				<div class="col-md-12">
+					<p>Team TDF was formed in January 2015 for the Game Project course at  Jyväskylän ammattikorkeakoulu (JAMK), in Finland. TDF is composed of three Canadian exchange students, a South Korean exchange student, and one Finnish student.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="andrea.jpg" alt="Andrea C. Briceno" class="img-circle img-responsive" >
+					<h3>Andrea C. Briceno</h3>
+					<h4>Project Manager/Graphic Specialist/Website Design & Development</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="fiksu.jpg" alt="Brian Newell" class="img-circle img-responsive" >
+					<h3>Brian Newell</h3>
+					<h4>Project Leader/Head Programmer</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="Gangster.jpg" alt="Seungju Baek" class="img-circle img-responsive" >
+					<h3>Seungju Baek</h3>
+					<h4>Vice Programmer/Creative Director</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4" >
+					<img src="sean.jpg" alt="Sean Legge" class="img-circle img-responsive" >
+					<h3>Sean Legge</h3>
+					<h4>Creative Director</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="elli.jpg" alt="Elli Manninen" class="img-circle img-responsive" >
+					<h3>Elli Manninen</h3>
+					<h4>Audio Engineer</h4>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<!--footer -->
+		<footer>
+			<nav class="nav navbar-inverse">
+			<div class="container-fluid footer">
+				<ul class="">
+					<li><a href="index.html">The Game</a></li>
+					<li><a href="zde.html">About ZDE</a></li>
+					<li><a href="contact.html">Contact TDF</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">©2015 · Team TDF</a></li>
+				</ul>
+			</div>
+			</nav>
+		</footer>
+	</body>
 </html>
