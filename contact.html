@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>@ZDE:~$ /Contact</title>
+		<meta charset="utf-8">
+		
+		<!--mobile first: this makes the site mobile friendly-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Bootstrap files from the server, as opposed to using the ones downloaded-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+			<!-- Latest compiled JavaScript -->
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			
+			<style>
+				body, html{
+					height: 100%;
+				}
+				
+				body{
+					background-color: #000;
+				}
+			
+				.container{
+					min-height: 50%;
+				}
+				
+				#mainNavBar a{
+					color: #00ff00;
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 16px;
+				}
+				
+				.zdehead{
+					margin-top: -20px;
+				}
+				
+				h1{
+					font-family: "Lucida Console", Monaco, monospace;
+					text-shadow: 2px 2px 2px #FFF;
+					color: #009900;
+					padding: 50px 50px;
+				}
+				
+				h2{
+					font-family: "Lucida Console", Monaco, monospace;
+					color: #000;
+					text-shadow: 1px 1px 2px #00ff00;
+				}
+				
+				h3{
+					font-family: "Lucida Console", Monaco, monospace sans-serif;
+					font-size: 30px;
+					color: #00ff00;
+					
+				}
+				
+				h4{
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 18px;
+					font-weight: bold;
+				}
+				
+				p{
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 15px;
+					padding-top: 20px;
+					
+				}
+				
+				form{
+					margin-top: 50px;
+				}
+				
+				label{
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 16px;
+						
+				}
+				
+				.row img{
+					width: 350px;
+				} 
+				
+				#row2{
+					margin-top: 25px;
+					margin-bottom: 25px;
+				}
+				
+				#submit{
+					background-color: #00ff00;
+					font-family: "Lucida Console", Monaco, monospace;
+					color: #000;
+					font-size: 16px;
+					padding: 5px 20px 5px 20px;
+					font-weight: bold;
+					text-align: right;
+					border-style: outset;
+					border-width: 2px;
+				}
+				footer{
+					position: relative;
+					clear: both;
+					margin-top: -1px;
+				}
+				.footer ul{
+						text-align: center;
+						padding-top: 5px;
+						
+				}
+				.footer li{
+					display: inline;
+					padding-right: 80px;
+					
+				}
+				
+				.footer a{
+					color: #00ff00;
+					font-family: "Lucida Console", Monaco, monospace;
+					font-size: 16px;
+				}
+			</style>
+	</head>
+	
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<!--logo-->
+			<div class="navbar-header">
+				
+				<!--Button that collapses menu in mobile view-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>	
+				<img src="https://cloud.githubusercontent.com/assets/10729118/8948284/976ef3b2-3573-11e5-8df9-6c5593395f94.png" width="70">
+			</div>
+			
+			<!-- menu items -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">The Game</a></li>
+					<li><a href="team.html">The Team</a></li>
+					<li><a href="about.html">About ZDE</a></li>
+					<li class="active"><a href="#">Contact TDF</a></li>
+				</ul>	
+			</div>
+			
+		</div>
+		
+		</nav>
+		
+		<div id="content" class="bs-docs-header zdehead" tableindex="-1">
+				<img src="https://cloud.githubusercontent.com/assets/10729118/8948297/afb2f0e0-3573-11e5-942a-880fa6e22e6e.png" alt="ZDE Header" class="img-responsive">
+		</div>
+		
+		<!--Body -->
+		<div id="wrap" class="container">
+			<h2>@ZDE:/$ wget contact </h2> 
+			
+			<form action="contact.php" class="form-horizontal" method="post">
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Name</label>
+					<div class="col-sm-10">
+						<input type="text" name="UserName">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="email" class="col-sm-2 control-label">E-mail</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" name="UserEmail">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="message" class="col-sm-2 control-label">Message</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" rows="4" name="UserMessage"></textarea>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">2 + 3 = ?</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="human">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-10 col-sm-offset-2">
+						<input type="submit" value="Send" class="btn btn-primary">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-10 col-sm-offset-2">
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		
+		<!--footer -->
+		<footer>
+			<nav class="nav navbar-inverse">
+			<div class="container-fluid footer">
+				<ul>
+					<li><a href="index.html">About ZDE</a></li>
+					<li><a href="team.html">The Team</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">©2015 · Team TDF</a></li>
+				</ul>
+			</div>
+			</nav>
+		</footer>
+	</body>
+</html>
